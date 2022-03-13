@@ -284,6 +284,20 @@ header {
   }
 }
 
+.table {
+  padding-top: 15%;
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  .table-time {
+    text-align: center;
+  }
+  .table-activity {
+    text-align: center;
+    text-decoration: dotted;
+  }
+}
 // Bootstrap Overrides
 .text-primary {
   color: $theme-primary;
