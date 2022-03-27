@@ -225,7 +225,8 @@ header {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: auto;
+  max-width: 600px;
+  max-height: 335px;
   margin: 0 auto;
   .portfolio-box-caption {
     color: white;
@@ -296,6 +297,39 @@ header {
   .table-activity {
     text-align: center;
     text-decoration: dotted;
+  }
+}
+// List of places
+.list-places {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  justify-content: center;
+  img {
+    margin-bottom: 5rem;
+    margin-right: 2.5rem;
+    width: 200px;
+  }
+  img:last-child {
+    margin-left: 2rem;
+  }
+  .place-content {
+    margin-bottom: 5rem;
+    text-align: center;
+    text-decoration: dotted;
+  }
+  .subtitle {
+    font-weight: bold;
+  }
+  .description {
+    font-style: italic;
+    padding-top: 2rem;
+  }
+  .map-places {
+    width: 640px;
+    height: 480px;
+    loading: lazy;
   }
 }
 // Bootstrap Overrides
