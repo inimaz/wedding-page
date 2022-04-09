@@ -1,81 +1,158 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Iñigo y Analia</a>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
 <section class="bg-primary" id="what-to-visit">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h1 class="section-heading">Lugares a visitar alrededor</h1>
-                <hr class="light">
-                <p class="text-faded">Esto es una lista de lugares que nos gustan alrededor de Madrid. El objetivo es dar ideas de qué hacer cerca de Madrid, si es vuestra primera vez pr Madrizz.</p>
-            </div>
-        </div>
-        <div class="row list-places">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h1 class="section-heading">Madrid</h1>
-            </div>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1FUuL1eT4IrcVr6NZWigN1_2wkUaUrtkB&hl=es&ehbc=2E312F" class="map-places"></iframe>
-        </div>
-
-
-        <div class="row list-places">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h1 class="section-heading">Ciudades</h1>
-            </div>
-        </div>
-        <div class="row list-places">
-                <img src="img/cities/Toledo.jpg" class="img col-lg-4" alt="">
-                <div class="place-content col-lg-6">
-                    <p class="subtitle">Toledo</p>
-                    <p class="description">Impresionante ciudad medieval<br /></p>
-                </div>
-        </div>
-        <div class="row list-places">
-                <img src="img/cities/Avila.jpg" class="img col-lg-4" alt="">
-                <div class="place-content col-lg-6">
-                    <p class="subtitle">Ávila</p>
-                    <p class="description">La muralla más grande de España<br /></p>
-                </div>
-        </div>
-        <div class="row list-places">
-                <img src="img/cities/Alcala-de-henares.png" class="img col-lg-4" alt="">
-                <div class="place-content col-lg-6">
-                    <p class="subtitle">Alcalá de Henares</p>
-                    <p class="description">La cuna de Cervantes<br /></p>
-                </div>
-        </div>
-        <div class="row list-places">
-            <img src="img/cities/Aranjuez.jpg" class="img col-lg-4" alt="">
-            <div class="place-content col-lg-6">
-                <p class="subtitle">Aranjuez</p>
-                <p class="description">Un palacio y sus jardines<br /></p>
-            </div>
-        </div>
-        <div class="row list-places">
-            <img src="img/cities/san-lorenzo-del-escorial.jpg" class="img col-lg-4" alt="">
-            <div class="place-content col-lg-6">
-                <p class="subtitle">San Lorenzo del Escorial</p>
-                <p class="description">Monasterio y tumba de reyes. El valle de los caídos --> monumento de la guerra civil.<br /></p>
-            </div>
-        </div>
-        <div class="row list-places">
-            <img src="img/cities/Segovia.jpg" class="img col-lg-4" alt="">
-            <div class="place-content col-lg-6">
-                <p class="subtitle">Segovia</p>
-                <p class="description">Acueducto y alcázar<br /></p>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h1 class="section-heading">Lugares a visitar alrededor</h1>
+        <hr class="light" />
+        <p class="text-faded">
+          Esto es una lista de lugares que nos gustan alrededor de Madrid. El
+          objetivo es dar ideas de qué hacer cerca de Madrid, si es vuestra
+          primera vez pr Madrizz.
+        </p>
+      </div>
     </div>
-        <div class="row list-places">
-                <img src="img/cities/granja-san-ildefonso.jpg" class="img col-lg-4" alt="">
-                <div class="place-content col-lg-6">
-                    <p class="subtitle">La granja de San Ildefonso</p>
-                    <p class="description">Un palacio y sus jardines<br /></p>
-                </div>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1UhcwAE3FqWTzu-KZ9gXbsGyvYj8UOmY6&hl=es&ehbc=2E312F" class="map-places"></iframe>
-        </div>
-
-
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#contact" class="btn btn-default btn-xl page-scroll text-center">¿Necesitas algún consejillo? ¡Contáctanos!</a>
-            </div> 
-        </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h1 class="section-heading">Qué ver en Madrid</h1>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1FUuL1eT4IrcVr6NZWigN1_2wkUaUrtkB&hl=es&ehbc=2E312F"
+        class="map-places"
+        title="Places to visit in Madrid"
+      ></iframe>
     </div>
+    <hr class="light" />
+
+    <div class="row" id="cities-around-madrid">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h1 class="section-heading">Ciudades alrededor de Madrid</h1>
+      </div>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/d/embed?mid=1UhcwAE3FqWTzu-KZ9gXbsGyvYj8UOmY6&hl=es&ehbc=2E312F"
+      class="map-places"
+      title="Cities next to Madrid"
+    ></iframe>
+    <!-- 
+        END list of cities to visit
+     -->
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <a
+          href="#contact"
+          class="btn btn-default btn-xl page-scroll text-center"
+          >¿Necesitas algún consejillo? ¡Contáctanos!</a
+        >
+      </div>
+    </div>
+  </div>
 </section>
+
+<script type="text/javascript">
+  // Get the elements to be iterated
+  let htmlElements = [
+    {
+      location: "https://goo.gl/maps/HfMa1SMD7ELJJQZg8",
+      image: "img/cities/Toledo.jpg",
+      city: "Toledo",
+      description: "Impresionante ciudad medieval",
+    },
+    {
+      location: "https://goo.gl/maps/rXNMVqe8fa6vg8Wt5",
+      image: "img/cities/Segovia.jpg",
+      city: "Segovia",
+      description: "Acueducto y alcázar",
+    },
+    {
+      location: "https://goo.gl/maps/95T8DiQ36HPciZ2B6",
+      image: "img/cities/Avila.jpg",
+      city: "Avila",
+      description: "La muralla más grande de España",
+    },
+    {
+      location: "https://goo.gl/maps/uVJuqjo7dcBQQdpe7",
+      image: "img/cities/Aranjuez.jpg",
+      city: "Aranjuez",
+      description: "Un palacio y sus jardines",
+    },
+    {
+      location: "https://goo.gl/maps/Tww8JyUB5Ld1CpRY8",
+      image: "img/cities/granja-san-ildefonso.jpg",
+      city: "La granja de San Ildefonso",
+      description: "Un palacio y sus jardines",
+    },
+    {
+      location: "https://goo.gl/maps/1XSwLwV8AtTt8DBP6",
+      image: "img/cities/san-lorenzo-del-escorial.jpg",
+      city: "San Lorenzo del Escorial",
+      description:
+        " Monasterio y tumba de reyes. El valle de los caídos, monumento de la guerra civil.",
+    },
+    {
+      location: "https://goo.gl/maps/4cHFmKbawN7zbb8M9",
+      image: "img/cities/alcala-de-henares.jpg",
+      city: "Alcalá de Henares",
+      description: "La cuna de Cervantes",
+    },
+  ];
+  let outputElements = "";
+
+  // Define a variable to keep track
+  // of the current iteration
+  let i = 0;
+  let currentElement;
+
+  // Check if the current value
+  // is lesser than total elements
+  while (i < htmlElements.length) {
+    currentElement = htmlElements[i];
+    outputElements += `<div class="col-lg-4 col-sm-6">
+        <a href=${currentElement.location} class="portfolio-box">
+          <img
+            src=${currentElement.image}
+            class="img-responsive"
+            alt=${currentElement.city}
+          />
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                ${currentElement.city}
+              </div>
+              <div class="project-name">${currentElement.description}</div>
+            </div>
+          </div>
+        </a>
+      </div>`;
+    // Increment the value
+    i++;
+  }
+  console.log(outputElements);
+  document.getElementById("cities-around-madrid").innerHTML += `
+    <div class="container-fluid">
+      <div class="row no-gutter">${outputElements}</div>
+    </div>`;
+</script>
