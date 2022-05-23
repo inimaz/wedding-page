@@ -1,36 +1,114 @@
-<section class="no-padding" id="where-to-stay">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-        <div class="row no-gutter">
-            <div class="col-lg-6 col-sm-6">
-                <a href="https://goo.gl/maps/EjPqhN8AopYAuu5z7" class="portfolio-box">
-                    <img src="img/parroquia-de-la-santisima-trinidad-collado-villalba.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Ceremonia
-                            </div>
-                            <div class="project-name">
-                                Parroquia Santísima Trinidad
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-                <a href="https://goo.gl/maps/6PFMoMeKBFMpDgdK9" class="portfolio-box">
-                    <img src="img/torreones.png" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Comida
-                            </div>
-                            <div class="project-name">
-                                Finca Los Torreones
-                            </div>
-                        </div>
-                    </div>
-                </a>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Iñigo y Analia</a>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+  <section class="bg-secondary" id="where-to-stay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h1 class="section-heading">Hoteles cercanos dónde alojarse</h1>
+          <hr/>
+          <p class="text-faded-grey">
+            Haz click en las imágenes para ver la página de Reserva de cada hotel
+          </p>
+        </div>
+        <br><br>
+        </div>
+        <div class="row" id="hotels-around">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
             </div>
         </div>
+      </div>
     </div>
-</section>
+
+    
+  </section>
+
+  <script type="text/javascript">
+    // Get the elements to be iterated
+    let htmlElements = [
+      {
+        url: "https://www.paxhoteles.com/es/hotel-pax-torrelodones/",
+        location:"https://g.page/HotelPaxTorrelodones?share",
+        address:"C. de Ribadeo, 28250 Torrelodones, Madrid",
+        image: "img/PAX_Torre.jpg",
+        name: "Hotel PAX Torrelodones",
+        description: "16 min en coche a la iglesia <br> 5 min en coche desde Los Torreones <br> 8 min en coche a la Estación de Tren de Torrelodones",
+      },
+      {
+        url: "https://www.hotelfcvillalba.com/",
+        location:"https://g.page/hotelfcvillalba?share",
+        address:"Carr. Navacerrada, Km 1,37, 28400 Collado Villalba, Madrid",
+        image: "img/FC_Villalba.jpg",
+        name: "Hotel FC Villalba",
+        description: "8 min en coche a la iglesia<br> 11 min en coche desde Los Torreones<br> 11 min en coche a la Estación de Tren de Villalba",
+      },
+      {
+        url: "http://hotelplazalasmatas.com/",
+        location:"https://goo.gl/maps/wXot8NqRi8k1Fi8BA",
+        address:"C. Martín Iriarte, 2F, 28290 Las Rozas de Madrid, Madrid",
+        image: "img/Plaza_LasMatas.jpg",
+        name: "Hotel Plaza Las Matas",
+        description: "16 min en coche a la iglesia<br> 7 min en coche desde Los Torreones<br> 2 min andando a la Estación de Tren de Las Matas",
+      },
+    ];
+    let outputElements = "";
+  
+    // Define a variable to keep track
+    // of the current iteration
+    let i = 0;
+    let currentElement;
+  
+    // Check if the current value
+    // is lesser than total elements
+    while (i < htmlElements.length) {
+      currentElement = htmlElements[i];
+      outputElements += `<div class="col-lg-4 col-sm-6">
+          <a href=${currentElement.url} class="portfolio-box">
+            <img
+              src=${currentElement.image}
+              class="img-responsive"
+              alt=${currentElement.name}
+            />
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  ${currentElement.name}
+                </div>
+              </div>
+            </div>
+          </a>
+          <br>
+          <div class="project-name text-center">
+            <a href=${currentElement.location}>${currentElement.address}</a>
+            <br><br>
+            <p class="text-faded-grey">${currentElement.description}</p>
+        </div>
+        </div>`;
+      // Increment the value
+      i++;
+    }
+    console.log(outputElements);
+    document.getElementById("hotels-around").innerHTML += `
+      <div class="container-fluid">
+        <div class="row no-gutter">${outputElements}</div>
+      </div>`;
+  </script>
