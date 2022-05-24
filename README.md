@@ -16,10 +16,11 @@ See it live in action at <https://volny.github.io/creative-theme-jekyll/>
 
 ```
 gem install jekyll bundler
+bundle install
 ```
 
 # Run it
 
 ```
-jekyll serve --force_polling
+bundle exec jekyll serve
 ```
