@@ -2,6 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -56,6 +58,8 @@ p {
 }
 .text-faded-grey {
   color: rgba(grey, 0.7);
+  word-wrap: break-word;
+  min-width: 132px;
 }
 section {
   padding: 100px 0;
@@ -215,7 +219,8 @@ header {
 
 .service-box {
   max-width: 400px;
-  margin: 50px auto 0;
+  margin: 50px auto 0;  
+  overflow-x: auto;
   @media (min-width: 992px) {
     margin: 20px auto 0;
   }
