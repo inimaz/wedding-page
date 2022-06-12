@@ -28,7 +28,7 @@
       url: "https://www.paxhoteles.com/es/hotel-pax-torrelodones/",
       location:"https://g.page/HotelPaxTorrelodones?share",
       address:"C. de Ribadeo, 28250 Torrelodones, Madrid",
-      image: "img/PAX_Torre.jpg",
+      image: "img/hotels/PAX_Torre.jpg",
       name: "Hotel PAX Torrelodones",
       description: "16 min en coche a la iglesia <br> 5 min en coche desde Los Torreones <br> 8 min en coche a la Estación de Tren de Torrelodones",
     },
@@ -36,7 +36,7 @@
       url: "https://www.hotelfcvillalba.com/",
       location:"https://g.page/hotelfcvillalba?share",
       address:"Carr. Navacerrada, Km 1,37, 28400 Collado Villalba, Madrid",
-      image: "img/FC_Villalba.jpg",
+      image: "img/hotels/FC_Villalba.jpg",
       name: "Hotel FC Villalba",
       description: "8 min en coche a la iglesia<br> 11 min en coche desde Los Torreones<br> 11 min en coche a la Estación de Tren de Villalba",
     },
@@ -44,7 +44,7 @@
       url: "http://hotelplazalasmatas.com/",
       location:"https://goo.gl/maps/wXot8NqRi8k1Fi8BA",
       address:"C. Martín Iriarte, 2F, 28290 Las Rozas de Madrid, Madrid",
-      image: "img/Plaza_LasMatas.jpg",
+      image: "img/hotels/Plaza_LasMatas.jpg",
       name: "Hotel Plaza Las Matas",
       description: "16 min en coche a la iglesia<br> 7 min en coche desde Los Torreones<br> 2 min andando a la Estación de Tren de Las",
     },
@@ -52,7 +52,7 @@
       url: "https://www.eurostarshotels.co.uk/exe-gran-hotel-almenar.html",
       location:"https://g.page/exe-gran-hotel-almenar-madrid?share",
       address:"C. Jaraíz, 1, 28290 Las Rozas de Madrid, Madrid",
-      image: "img/Exe_Gran_Hotel.png",
+      image: "img/hotels/Exe_Gran_Hotel.png",
       name: "Exe Gran Hotel Almenar",
       description: "17 min en coche a la iglesia<br> 5 min en coche desde Los Torreones<br> 16 min andando a la Estación de Tren de Las Matas",
     },
@@ -60,7 +60,7 @@
       url: "https://www.hotel-bb.com/en/hotel/madrid-pinar-las-rozas",
       location:"https://g.page/BBHotelPinarRozas?share",
       address:"Nacional VI, Km 22, 5, 28230 Las Rozas de Madrid, Madrid",
-      image: "img/ByBPinar.jpg",
+      image: "img/hotels/ByBPinar.jpg",
       name: "B&B Hotel Madrid Pinar de Las Rozas",
       description: "15 min en coche a la iglesia<br> 11 min en coche desde Los Torreones<br> 13 min andando a la Estación de Tren Pinar de Las Rozas",
     },
@@ -68,7 +68,7 @@
       url: "hhttps://www.hotel-bb.com/en/hotel/madrid-las-rozas",
       location:"https://g.page/BBHotelMadridLasRozas?share",
       address:"Calle Perú, 2 , 28290 Las Rozas de Madrid, Madrid",
-      image: "img/ByB_LasRozas.jpg",
+      image: "img/hotels/ByB_LasRozas.jpg",
       name: "B&B Hotel Madrid Las Rozas",
       description: "20 min en coche a la iglesia<br> 7 min en coche desde Los Torreones<br> 21 min andando a la Estación de Tren de Las Matas",
     },
@@ -85,7 +85,7 @@
   while (i < htmlElements.length) {
     currentElement = htmlElements[i];
     outputElements += `<div class="col-lg-6 col-sm-4">
-        <a href=${currentElement.url} class="portfolio-box
+        <a href=${currentElement.url} class="portfolio-box">
           <img
             src=${currentElement.image}
             class="img-responsive"
